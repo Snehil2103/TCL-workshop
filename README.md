@@ -21,6 +21,19 @@ Start the shell script with a shebhang. It tells the system which interpreter to
 
 ```#!/bin/tcsh -f```
 
+There are three general scenarios to consider from user point of view while writing the shell script
+
+- Not provide .csv file as input
+- Provide a .csv file which doesn't exist
+- Type "-help" to find out the usage
+
+To give execution permission to a shell script, use the following command in the bash
+
+```chmod +x script_name```
+
+
+
+
 
 
 
