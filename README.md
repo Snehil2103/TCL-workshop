@@ -8,7 +8,7 @@ The Main goal of this repository is to develop a TCL script that takes a CSV fil
 
 # TASK:
 
-- Write a TCL script to automate Synthesis and Static timing analysis of the Design details mentioned in CSV file
+- Write a Shell script & TCL script to automate Synthesis and Static timing analysis of the Design details mentioned in CSV file
 
 # SUB-TASKS:
 
@@ -30,6 +30,11 @@ There are three general scenarios to consider from user point of view while writ
 To give execution permission to a shell script, use the following command in the bash
 
 ```chmod +x script_name```
+
+# Day 2: Variable Creation and Processing Constraints from CSV
+
+
+
 
 
 
