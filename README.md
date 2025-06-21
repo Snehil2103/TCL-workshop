@@ -188,6 +188,13 @@ We obtain a timing report file after running OpenTimer tool. We need to the plac
 
    The TCL workshop on synthesis and timing provided valuable insights into TCL scripting for Front-End Design, enhancing our understanding of scripting and open-source EDA tools.
 
+ # Acknowledgement:
+
+   I extend my sincere gratitude to Kunal Ghosh and the VSD team for their guidance.
+
+ # Certificate of completion: 
+
+ 
 
 
 
