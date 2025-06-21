@@ -110,9 +110,35 @@ Log file:
 
 Now, lets create an error in verilog file
 
-The Error flag is 1
+![Screenshot 2025-06-21 145600](https://github.com/user-attachments/assets/f11ac288-4b32-4fb2-94b3-bc5bf028084d)
+
+The Error flag is 1, We can check log file for errors or grep them from log file using tcl
 
 ![Screenshot 2025-06-21 134843](https://github.com/user-attachments/assets/4080ab8b-969a-4510-b99f-6cc73a7ea9d5)
+
+After verifying hierarchial checks, we can proceed further and run synthesis successfully
+
+![Screenshot 2025-06-21 135302](https://github.com/user-attachments/assets/5c8d5faa-3701-4bcf-b185-b85bc0a7607e)
+
+# Day 5: Advanced Scripting Techniques and Quality of Results Generation
+
+Now, we need to feed the synthesized netlist and SDC file in compitable formats to OpenTimer tool for generating timing report.
+
+The Synthesized netlist contains '*' which cannot be used by opentimer
+
+![Screenshot 2025-06-19 194753](https://github.com/user-attachments/assets/3a52e840-cd21-4277-b715-546eb9009117)
+
+After necessary scripting, the '*' are removed and we can observe the number lines are also decreased due to the removal
+
+![Screenshot 2025-06-19 194633](https://github.com/user-attachments/assets/fa1853e7-3b0c-481d-940a-ce1acbbc5148)
+
+- Procedure:
+
+ In TCL, a proc is a way to define a reusable block of code, similar to functions in other programming languages. The proc command allows you to give a name to a group of commands, specify a list of parameters, and write the body of the procedure that executes when the proc is called. Its basic syntax is proc name {args} {body}, where name is the procedure's name, args are the parameters, and body is the set of commands to run.
+  
+Set_multi_cpu_usage.proc:
+
+![Screenshot 2025-06-19 194937](https://github.com/user-attachments/assets/bcc04ae1-88e4-47d9-9a31-688c67e8acd5)
 
 
 
