@@ -53,12 +53,12 @@ To give execution permission to a shell script, use the following command in the
 
 SDC - Synopsys Design Constraints format is industry standard format which is widely accepted by many EDA tools for various stages flow.
 
-- Algorithm :
+- ALGORITHM :
 
-- From the constraints.csv file, a matrix named 'constraints' is created using the command ```::struct::matrix constraints```
-- A rectangular search space is created and values in that space are accessed through row and column numbers
-- After accessing the values, they are converted to SDC format through TCL code
-- This is done seperately for clock, input and output constraints
+ - From the constraints.csv file, a matrix named 'constraints' is created using the command ```::struct::matrix constraints```
+ - A rectangular search space is created and values in that space are accessed through row and column numbers
+ - After accessing the values, they are converted to SDC format through TCL code
+ - This is done seperately for clock, input and output constraints
 
 ![Screenshot 2025-06-21 123542](https://github.com/user-attachments/assets/86019fd5-9d4a-4e8e-b9e5-d2bc13d924ef)
 
@@ -68,7 +68,7 @@ SDC - Synopsys Design Constraints format is industry standard format which is wi
 
  ![Screenshot 2025-06-19 184249](https://github.com/user-attachments/assets/c5794837-5baa-48e2-a8b6-d20f9ec41f12)
 
-- Categorizing as input constarints as bits and bussed and conversion to SDC format
+- Categorizing as input constraints as bits and bussed and conversion to SDC format
 
  ![Screenshot 2025-06-19 185811](https://github.com/user-attachments/assets/50bd881c-48c2-434b-bb87-a3d89430a0b5)
 
