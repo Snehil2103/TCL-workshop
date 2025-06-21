@@ -79,6 +79,48 @@ SDC - Synopsys Design Constraints format is industry standard format which is wi
  ![Screenshot 2025-06-21 133907](https://github.com/user-attachments/assets/34cb4b4d-78fb-4529-9dbf-45854a961667)
 
  ![Screenshot 2025-06-19 190632](https://github.com/user-attachments/assets/8bc839fa-aaca-4a94-ae29-e41c5b842af7)
+
+# Day 4: Introduction to Yosys synthesis tool usage
+
+Yosys is an open-source EDA tool widely used in the field of VLSI automation. It is used to generate technology-mapped, optimized gate-level netlist by taking RTL designs, SDC constraints and library files as input.
+
+The RTL description of a single bit memory and its synthesized netlist:
+
+![Screenshot 2025-06-21 141057](https://github.com/user-attachments/assets/ec978017-80e9-456f-ac5a-1a54f0fe787b)
+
+Functionality:
+
+- New data is written into memory during first rising edge of clock
+
+  ![Screenshot 2025-06-21 141208](https://github.com/user-attachments/assets/7582726a-df9d-4d1c-b82b-f33fa1000654)
+
+- At the second rising edge of the clock, the data is read from the memory
+
+  ![Screenshot 2025-06-21 141309](https://github.com/user-attachments/assets/3c6c276b-dd2d-494d-aef4-7ed074cbefbb)
+
+Hierarchical check is performed before synthesis to check whether all the referenced modules are defined and properly connected in the design hierarchy.
+
+If all modules are connected properly then the terminal shows error flag as zero:
+
+![Screenshot 2025-06-21 134154](https://github.com/user-attachments/assets/71e15172-60e6-404c-bd61-0351b1442dac)
+
+Log file:
+
+![Screenshot 2025-06-19 191232](https://github.com/user-attachments/assets/59f3db2d-dfb7-48d1-997d-accd87faf5a5)
+
+Now, lets create an error in verilog file
+
+The Error flag is 1
+
+![Screenshot 2025-06-21 134843](https://github.com/user-attachments/assets/4080ab8b-969a-4510-b99f-6cc73a7ea9d5)
+
+
+
+
+
+
+
+
  
 
 
