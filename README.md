@@ -10,7 +10,7 @@ The Main goal of this repository is to develop a TCL script that takes a CSV fil
 
 - Write a Shell script & TCL script to automate Synthesis and Static timing analysis of the Design details mentioned in CSV file
 
-![Screenshot 2025-06-21 114624](https://github.com/user-attachments/assets/48e284b5-29b7-4f00-9c4b-ae4bde752b94)
+  ![Screenshot 2025-06-21 114624](https://github.com/user-attachments/assets/48e284b5-29b7-4f00-9c4b-ae4bde752b94)
 
 # SUB-TASKS:
 
@@ -19,7 +19,7 @@ The Main goal of this repository is to develop a TCL script that takes a CSV fil
 - Convert format[1] & SDC to format[2] and pass to timing tool 'Opentimer'
 - Generate output report
 
-![Screenshot 2025-06-21 114811](https://github.com/user-attachments/assets/942e1d4e-9c7d-45c9-9ac2-34c6ae993bf1)
+  ![Screenshot 2025-06-21 114811](https://github.com/user-attachments/assets/942e1d4e-9c7d-45c9-9ac2-34c6ae993bf1)
 
 Start the shell script with a shebhang. It tells the system which interpreter to use to run the script
 
@@ -31,7 +31,7 @@ There are three general scenarios to consider from user point of view while writ
 - Provide a .csv file which doesn't exist
 - Type "-help" to find out the usage
 
-![Image](https://github.com/user-attachments/assets/20bce904-eccc-4e9b-9856-8ee40240a27d)
+   ![Image](https://github.com/user-attachments/assets/20bce904-eccc-4e9b-9856-8ee40240a27d)
 
 To give execution permission to a shell script, use the following command in the bash
 
@@ -39,46 +39,46 @@ To give execution permission to a shell script, use the following command in the
 
 # Day 2: Variable Creation and Processing Constraints from CSV
 
-![Screenshot 2025-06-21 114438](https://github.com/user-attachments/assets/2b27f163-0c40-4306-9eba-00382eed9f63)
+   ![Screenshot 2025-06-21 114438](https://github.com/user-attachments/assets/2b27f163-0c40-4306-9eba-00382eed9f63)
 
 - Auto Creation of variables using matrix and arrays
 
- ![Screenshot 2025-06-19 182110](https://github.com/user-attachments/assets/86f48374-3b99-462e-8e18-7bd3ac352282)
+   ![Screenshot 2025-06-19 182110](https://github.com/user-attachments/assets/86f48374-3b99-462e-8e18-7bd3ac352282)
 
 - Checking the existence and files and folders mentioned in design_details.csv
 
- ![Screenshot 2025-06-19 182651](https://github.com/user-attachments/assets/c63d9363-5e9c-49bd-99e8-50eacb4f7b8a)
+   ![Screenshot 2025-06-19 182651](https://github.com/user-attachments/assets/c63d9363-5e9c-49bd-99e8-50eacb4f7b8a)
 
 # Day 3: Processing constraints.csv file and generating SDC format
 
 SDC - Synopsys Design Constraints format is industry standard format which is widely accepted by many EDA tools for various stages flow.
 
-- ALGORITHM :
+ALGORITHM :
 
  - From the constraints.csv file, a matrix named 'constraints' is created using the command ```::struct::matrix constraints```
  - A rectangular search space is created and values in that space are accessed through row and column numbers
  - After accessing the values, they are converted to SDC format through TCL code
  - This is done seperately for clock, input and output constraints
 
-![Screenshot 2025-06-21 123542](https://github.com/user-attachments/assets/86019fd5-9d4a-4e8e-b9e5-d2bc13d924ef)
+   ![Screenshot 2025-06-21 123542](https://github.com/user-attachments/assets/86019fd5-9d4a-4e8e-b9e5-d2bc13d924ef)
 
 - Processing clock constraints and conversion to SDC format
 
- ![Screenshot 2025-06-19 184519](https://github.com/user-attachments/assets/f5548e84-0d70-469a-a148-4117280264e5)
+   ![Screenshot 2025-06-19 184519](https://github.com/user-attachments/assets/f5548e84-0d70-469a-a148-4117280264e5)
 
- ![Screenshot 2025-06-19 184249](https://github.com/user-attachments/assets/c5794837-5baa-48e2-a8b6-d20f9ec41f12)
+   ![Screenshot 2025-06-19 184249](https://github.com/user-attachments/assets/c5794837-5baa-48e2-a8b6-d20f9ec41f12)
 
-- Categorizing as input constraints as bits and bussed and conversion to SDC format
+- Categorizing as input constraints as bits and bussed and conversion to SDC format. The busses are placed with '*' after the port name.
 
- ![Screenshot 2025-06-21 133735](https://github.com/user-attachments/assets/983102ba-beb0-4c1a-a6ed-a82ff832c4e4)
+   ![Screenshot 2025-06-21 133735](https://github.com/user-attachments/assets/983102ba-beb0-4c1a-a6ed-a82ff832c4e4)
 
- ![Screenshot 2025-06-19 190013](https://github.com/user-attachments/assets/131381cc-366e-4d91-89de-ece70bb75840)
+   ![Screenshot 2025-06-19 190013](https://github.com/user-attachments/assets/131381cc-366e-4d91-89de-ece70bb75840)
 
-- Processing output constraints and conversion to SDC format
+- Processing output constraints and conversion to SDC format. The busses are placed with '*' after the port name.
 
- ![Screenshot 2025-06-21 133907](https://github.com/user-attachments/assets/34cb4b4d-78fb-4529-9dbf-45854a961667)
+   ![Screenshot 2025-06-21 133907](https://github.com/user-attachments/assets/34cb4b4d-78fb-4529-9dbf-45854a961667)
 
- ![Screenshot 2025-06-19 190632](https://github.com/user-attachments/assets/8bc839fa-aaca-4a94-ae29-e41c5b842af7)
+   ![Screenshot 2025-06-19 190632](https://github.com/user-attachments/assets/8bc839fa-aaca-4a94-ae29-e41c5b842af7)
 
 # Day 4: Introduction to Yosys synthesis tool usage
 
@@ -92,35 +92,35 @@ Functionality:
 
 - New data is written into memory during first rising edge of clock
 
-  ![Screenshot 2025-06-21 141208](https://github.com/user-attachments/assets/7582726a-df9d-4d1c-b82b-f33fa1000654)
+   ![Screenshot 2025-06-21 141208](https://github.com/user-attachments/assets/7582726a-df9d-4d1c-b82b-f33fa1000654)
 
 - At the second rising edge of the clock, the data is read from the memory
 
-  ![Screenshot 2025-06-21 141309](https://github.com/user-attachments/assets/3c6c276b-dd2d-494d-aef4-7ed074cbefbb)
+   ![Screenshot 2025-06-21 141309](https://github.com/user-attachments/assets/3c6c276b-dd2d-494d-aef4-7ed074cbefbb)
 
 Hierarchical check is performed before synthesis to check whether all the referenced modules are defined and properly connected in the design hierarchy.
 
 If all modules are connected properly then the terminal shows error flag as zero:
 
-![Screenshot 2025-06-21 134154](https://github.com/user-attachments/assets/71e15172-60e6-404c-bd61-0351b1442dac)
+  ![Screenshot 2025-06-21 134154](https://github.com/user-attachments/assets/71e15172-60e6-404c-bd61-0351b1442dac)
 
 Log file:
 
-![Screenshot 2025-06-19 191232](https://github.com/user-attachments/assets/59f3db2d-dfb7-48d1-997d-accd87faf5a5)
+  ![Screenshot 2025-06-19 191232](https://github.com/user-attachments/assets/59f3db2d-dfb7-48d1-997d-accd87faf5a5)
 
 Now, lets create an error in verilog file
 
-![Screenshot 2025-06-21 145600](https://github.com/user-attachments/assets/f11ac288-4b32-4fb2-94b3-bc5bf028084d)
+  ![Screenshot 2025-06-21 145600](https://github.com/user-attachments/assets/f11ac288-4b32-4fb2-94b3-bc5bf028084d)
 
 The Error flag is 1, We can check log file for errors or grep them from log file using tcl
 
-![Screenshot 2025-06-21 134843](https://github.com/user-attachments/assets/4080ab8b-969a-4510-b99f-6cc73a7ea9d5)
+  ![Screenshot 2025-06-21 134843](https://github.com/user-attachments/assets/4080ab8b-969a-4510-b99f-6cc73a7ea9d5)
 
 After verifying hierarchial checks, we can proceed further and run synthesis successfully using configuration file
 
-![Screenshot 2025-06-21 153725](https://github.com/user-attachments/assets/4cc78cfa-0dd9-4a40-b838-64fb1114ca6f)
+  ![Screenshot 2025-06-21 153725](https://github.com/user-attachments/assets/4cc78cfa-0dd9-4a40-b838-64fb1114ca6f)
 
-![Screenshot 2025-06-21 135302](https://github.com/user-attachments/assets/5c8d5faa-3701-4bcf-b185-b85bc0a7607e)
+  ![Screenshot 2025-06-21 135302](https://github.com/user-attachments/assets/5c8d5faa-3701-4bcf-b185-b85bc0a7607e)
 
 # Day 5: Advanced Scripting Techniques and Quality of Results Generation
 
@@ -128,15 +128,15 @@ Now, we need to feed the synthesized netlist and SDC file in compitable formats 
 
 The Synthesized netlist contains '*' which cannot be used by opentimer
 
-![Screenshot 2025-06-19 193826](https://github.com/user-attachments/assets/73f8754c-2ecc-4529-9234-53914a0dcaea)
+  ![Screenshot 2025-06-19 193826](https://github.com/user-attachments/assets/73f8754c-2ecc-4529-9234-53914a0dcaea)
 
-![Screenshot 2025-06-19 194753](https://github.com/user-attachments/assets/3a52e840-cd21-4277-b715-546eb9009117)
+  ![Screenshot 2025-06-19 194753](https://github.com/user-attachments/assets/3a52e840-cd21-4277-b715-546eb9009117)
 
 After necessary scripting, the '*' are removed and we can observe the number lines are also decreased due to the removal
 
-![Screenshot 2025-06-21 153240](https://github.com/user-attachments/assets/2a0a1e45-c306-4e93-afd0-11f414779156)
+  ![Screenshot 2025-06-21 153240](https://github.com/user-attachments/assets/2a0a1e45-c306-4e93-afd0-11f414779156)
 
-![Screenshot 2025-06-19 194633](https://github.com/user-attachments/assets/fa1853e7-3b0c-481d-940a-ce1acbbc5148)
+  ![Screenshot 2025-06-19 194633](https://github.com/user-attachments/assets/fa1853e7-3b0c-481d-940a-ce1acbbc5148)
 
 - Procedure:
 
@@ -146,31 +146,31 @@ set_multi_cpu_usage.proc:
 
 This proc is for using custom multiple threads
 
-![Screenshot 2025-06-19 194937](https://github.com/user-attachments/assets/bcc04ae1-88e4-47d9-9a31-688c67e8acd5)
+  ![Screenshot 2025-06-19 194937](https://github.com/user-attachments/assets/bcc04ae1-88e4-47d9-9a31-688c67e8acd5)
 
 read_lib.proc:
 
 This proc is used to read the early library and late library for OpenTimer
 
-![Screenshot 2025-06-21 153340](https://github.com/user-attachments/assets/03df0866-3a09-4e9d-95dd-5e4187f11e9b)
+  ![Screenshot 2025-06-21 153340](https://github.com/user-attachments/assets/03df0866-3a09-4e9d-95dd-5e4187f11e9b)
 
 read_verilog.proc:
 
 This proc is used to read verilog file for OpenTimer
 
-![Screenshot 2025-06-21 153453](https://github.com/user-attachments/assets/415e37ff-b1d9-43f3-9a79-79ac7cd301a9)
+  ![Screenshot 2025-06-21 153453](https://github.com/user-attachments/assets/415e37ff-b1d9-43f3-9a79-79ac7cd301a9)
 
 read_sdc.proc:
 
-![Screenshot 2025-06-21 153422](https://github.com/user-attachments/assets/2cc2de83-6041-497a-a5f4-79c95b1e703f)
+  ![Screenshot 2025-06-21 153422](https://github.com/user-attachments/assets/2cc2de83-6041-497a-a5f4-79c95b1e703f)
 
 The read_sdc proc generates constraints in compitable format for OpenTimer by taking SDC file as argument
 
-![Screenshot 2025-06-19 210441](https://github.com/user-attachments/assets/3641357a-af50-4b78-959a-4c3638f54617)
+  ![Screenshot 2025-06-19 210441](https://github.com/user-attachments/assets/3641357a-af50-4b78-959a-4c3638f54617)
 
 The .conf file is generated by implementing multiple procedures like set_multi_cpu_usage, read_lib.proc, read_verilog.proc, read_sdc.proc and few OpenTimer specific procs like init_timer, report_timer, etc
 
-![Screenshot 2025-06-19 210342](https://github.com/user-attachments/assets/45aa235d-a7ba-4a01-af71-9c9e030339da)
+  ![Screenshot 2025-06-19 210342](https://github.com/user-attachments/assets/45aa235d-a7ba-4a01-af71-9c9e030339da)
 
 Quality of Results:
 
@@ -178,11 +178,11 @@ We obtain a timing analysis file after running OpenTimer tool. We need to the pl
 
 - Vertical QoR:
   
- ![Screenshot 2025-06-19 212405](https://github.com/user-attachments/assets/3389e6e3-b9f8-40bd-9869-e351b2ebc1cc)
+  ![Screenshot 2025-06-19 212405](https://github.com/user-attachments/assets/3389e6e3-b9f8-40bd-9869-e351b2ebc1cc)
 
 - Horizontal QoR:
   
- ![Screenshot 2025-06-19 213125](https://github.com/user-attachments/assets/8be949e0-916e-42e3-b704-d416241a0c2f)
+  ![Screenshot 2025-06-19 213125](https://github.com/user-attachments/assets/8be949e0-916e-42e3-b704-d416241a0c2f)
 
  # Conclusion:
 
