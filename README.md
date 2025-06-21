@@ -70,13 +70,13 @@ SDC - Synopsys Design Constraints format is industry standard format which is wi
 
 - Categorizing as input constraints as bits and bussed and conversion to SDC format
 
- ![Screenshot 2025-06-19 185811](https://github.com/user-attachments/assets/50bd881c-48c2-434b-bb87-a3d89430a0b5)
+ ![Screenshot 2025-06-21 133735](https://github.com/user-attachments/assets/983102ba-beb0-4c1a-a6ed-a82ff832c4e4)
 
  ![Screenshot 2025-06-19 190013](https://github.com/user-attachments/assets/131381cc-366e-4d91-89de-ece70bb75840)
 
 - Processing output constraints and conversion to SDC format
 
- ![Screenshot 2025-06-19 190724](https://github.com/user-attachments/assets/8982241c-dec2-4d83-bb3d-ff43711efadd)
+ ![Screenshot 2025-06-21 133907](https://github.com/user-attachments/assets/34cb4b4d-78fb-4529-9dbf-45854a961667)
 
  ![Screenshot 2025-06-19 190632](https://github.com/user-attachments/assets/8bc839fa-aaca-4a94-ae29-e41c5b842af7)
  
