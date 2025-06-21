@@ -27,6 +27,8 @@ There are three general scenarios to consider from user point of view while writ
 - Provide a .csv file which doesn't exist
 - Type "-help" to find out the usage
 
+![Image](https://github.com/user-attachments/assets/20bce904-eccc-4e9b-9856-8ee40240a27d)
+
 To give execution permission to a shell script, use the following command in the bash
 
 ```chmod +x script_name```
