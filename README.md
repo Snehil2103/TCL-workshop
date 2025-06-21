@@ -10,12 +10,16 @@ The Main goal of this repository is to develop a TCL script that takes a CSV fil
 
 - Write a Shell script & TCL script to automate Synthesis and Static timing analysis of the Design details mentioned in CSV file
 
+![Screenshot 2025-06-21 114624](https://github.com/user-attachments/assets/48e284b5-29b7-4f00-9c4b-ae4bde752b94)
+
 # SUB-TASKS:
 
 - Create a shell script and pass csv from UNIX shell to TCL script
 - Convert all inputs in csv to format[1] & SDC format and pass to synthesis tool 'Yosys'
 - Convert format[1] & SDC to format[2] and pass to timing tool 'Opentimer'
 - Generate output report
+
+![Screenshot 2025-06-21 114438](https://github.com/user-attachments/assets/2b27f163-0c40-4306-9eba-00382eed9f63)
 
 Start the shell script with a shebhang. It tells the system which interpreter to use to run the script
 
@@ -34,6 +38,11 @@ To give execution permission to a shell script, use the following command in the
 ```chmod +x script_name```
 
 # Day 2: Variable Creation and Processing Constraints from CSV
+
+
+
+
+
 
 
 
