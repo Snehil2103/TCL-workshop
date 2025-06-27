@@ -178,11 +178,11 @@ We obtain a timing report file after running OpenTimer tool. We need to the plac
 
 - Vertical QoR:
   
-  ![Screenshot 2025-06-19 212405](https://github.com/user-attachments/assets/3389e6e3-b9f8-40bd-9869-e351b2ebc1cc)
+ ![Screenshot 2025-06-21 135435](https://github.com/user-attachments/assets/626cfe25-ca48-4bd2-a61b-7da6eb7d3bc7)
 
 - Horizontal QoR:
   
-  ![Screenshot 2025-06-19 213125](https://github.com/user-attachments/assets/8be949e0-916e-42e3-b704-d416241a0c2f)
+ ![Screenshot 2025-06-21 135700](https://github.com/user-attachments/assets/dacd53f6-d581-4e89-a327-bd5ed22d5c97)
 
  # Conclusion:
 
